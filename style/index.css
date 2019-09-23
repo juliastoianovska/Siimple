@@ -1,0 +1,127 @@
+.top-section__navigation {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.navigation__link {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'Rubik', sans-serif;
+  font-size: 12px;
+  margin-right: 60px;
+}
+
+.navigation__link:hover {
+  text-decoration: underline;
+}
+
+.top-section {
+  background-color: #5896eb;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Rubik', sans-serif;
+  color: #ffffff;
+  margin-top: 10px;
+  height: 300px;
+}
+
+.top-section__header {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.top-section__text {
+  text-align: center;
+  margin-top: 4px;
+}
+
+.bottom-section {
+  height: 20vw;
+  font-family: 'Rubik', sans-serif;
+  color: #5e606c;
+}
+
+.bottom-section__header {
+  text-align: center;
+  font-weight: bold;
+}
+.bottom-section__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  align-items: center;
+  width: 240px;
+  max-height: 250px;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 30px 20px;
+  margin: 0px 12px;
+}
+
+.card__text {
+  font-size: 12px;
+}
+.card__image {
+ width: 60px;
+ height: 60px;
+ margin-bottom: 5px;
+}
+
+.bottom-section__link {
+  color: #5e606c;
+  font-weight: bold;
+}
+
+.bottom-section__link:hover {
+  color: #14151B;
+}
+
+.card:hover {
+  background-color:  #5896eb;
+  color: #ffffff;
+}
+
+.flipping-container {
+  background-color: transparent;
+  height: 60px;
+  width: 60px;
+}
+
+.flipping-icon {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.3s ease;
+}
+
+.flipping-icon:hover {
+  transform: rotateY(180deg);
+}
+
+.flipping-icon__front {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+.flipping-icon__back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  background-color: #FFFFFF;
+  background-image: url("../images/idea.svg");
+  transform: rotateY(180deg);
+}
